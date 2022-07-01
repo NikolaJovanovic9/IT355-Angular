@@ -1,0 +1,29 @@
+<app-header></app-header>
+<div class='box'>
+	<form #myForm="ngForm">
+		<h1>Izmijenite info</h1>
+		<div class='textbox'>
+			<input type='text' name='brand' required [(ngModel)]="carrr.brand" value={{carrr.brand}} />
+		</div>
+		<div class='textbox'>
+			<input type='text' name='model' required [(ngModel)]="carrr.model" value={{carrr.model}} />
+		</div>
+		<div class='textbox'>
+			<input type='text' name='price' required [(ngModel)]="carrr.price" value={{carrr.price}} />
+		</div>
+		<div class='textbox'>
+			<input type='text' name='year' required [(ngModel)]="carrr.year" value={{carrr.year}} />
+		</div>
+		<div class='textbox'>
+			<input type='text' name='body' required [(ngModel)]="carrr.body" value={{carrr.body}} />
+		</div>
+		<div class='textbox'>
+			<input type='text' name='fuel' required [(ngModel)]="carrr.fuel" value={{carrr.fuel}} />
+		</div>
+		<div class='textbox'>
+			<input type='text' name='location' required [(ngModel)]="carrr.location" value={{carrr.location />
+		</div>
+		<input class="btn" (click)="updateCar(carrr)" type="submit" value="Izmijeni">
+	</form>
+</div>
+<app-footer></app-footer>
